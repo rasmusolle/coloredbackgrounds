@@ -1,0 +1,12 @@
+---
+---
+{
+	"baseurl": {{ site.url }}{{ site.baseurl }},
+	"backgrounds": [
+		{% for item in site.backgrounds %}{
+			"name": {{ item.name }},
+			"url": {{ item. url }},
+			"colorcode": {{ item.colorcode }}
+		}, {% endfor %}
+	]
+}

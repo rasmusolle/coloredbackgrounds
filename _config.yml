@@ -1,0 +1,24 @@
+# Jekyll configuration file
+
+# Site settings
+baseurl: "/coloredbackgrounds" # the subpath of your site, e.g. /blog
+url: "https://rasmusolle.github.io/" # the base hostname & protocol for your site
+
+# To prevent the auto backup program from backing up compiled site files,
+# this destination is not within the modproj folder.
+destination: C:\temp\coloredbackgrounds\
+
+markdown_ext: "md,dat"
+
+exclude:
+  - colorz.txt
+  - generate.py
+  - README.md
+  - start.bat
+
+collections:
+  backgrounds:
+    permalink: /imgs/:title
+
+sass:
+  style: expanded

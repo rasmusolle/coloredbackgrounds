@@ -1,0 +1,27 @@
+---
+---
+<!doctype html>
+<html>
+	<head>
+		<title>Colored Desktop Backgrounds</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="header">
+			<h1>Colored Desktop Backgrounds</h1>
+			<p>This is a site which contains a collection of colored desktop backgrounds. Simply save the color you want as an image and set it as your desktop background.</p>
+			<p>Most of these are taken from the standard <a href="https://www.w3schools.com/colors/colors_hex.asp">HTML color names</a>.</p>
+			<h3>But my OS has colored backgrounds! Why does this exist?</h3>
+			<p>Congratulations! Not every OS has colored backgrounds, especially not very many. I made this especially because Chrome OS didn't have a big enough selection of colored backgrounds.</p>
+		</div>
+		<div class="content">
+			{%- for item in site.backgrounds -%}
+			<div class="bg"><img src="{{ item.url | replace: '/imgs/', 'imgs/' }}.png">{{ item.name }}<span class="code">#{{ item.colorcode }}</span></div>
+			{%- endfor -%}
+		</div>
+		<div class="footer">
+			<p><a href="api/v1/list.json">JSON API</a></p>
+		</div>
+	</body>
+</html>

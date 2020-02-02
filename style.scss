@@ -1,0 +1,38 @@
+---
+---
+body {
+	background-color: #ddddbb;
+	font-family: "Roboto Slab", serif;
+	margin: auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.header {
+	margin: auto;
+	max-width: 1000px;
+}
+.content {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 20px 0px;
+}
+
+.bg {
+	background-color: #ffffff;
+	border: 3px solid gray;
+	display: inline-block;
+	margin: 1px;
+
+	img {
+		display: block;
+		height: 150px;
+		width: 190px;
+	}
+	span.code {
+		background-color: #ededed;
+		display: block;
+		font-family: "Roboto Mono", monospace;
+		letter-spacing: 0px;
+	}
+}
